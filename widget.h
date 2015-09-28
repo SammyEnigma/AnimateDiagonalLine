@@ -11,7 +11,12 @@ public:
 
 signals:
 
-public slots:
+private slots:
+    void moveLine();
+
+private:
+    void paintEvent(QPaintEvent *);
+    int step;
 };
 
 #endif // WIDGET_H
